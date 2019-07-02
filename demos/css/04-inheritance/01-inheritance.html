@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Inheritance of styles</title>
+        <style>
+            #parent {
+                color: crimson;
+                padding: 10px;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Inheritance of styles</h1>
+        <hr />
+
+        Most CSS properties get inherited by children from the parent element. However some of them are not.
+        <br />
+        <strong>Note</strong>: It is qute intuitive which are and which ones are not. The 'color' property for example is inherited as you'd expect child element text content to have same color as parent text content. Border and padding on the other hand would have an unpleasant effect if inherited and you don't want it inherited - so it isn't by default.
+
+        <div id="parent">
+            <h3>Parent</h3>
+            Labore in mollit sunt laboris nulla ullamco proident ad fugiat Lorem nisi. Id adipisicing amet amet mollit duis labore pariatur aliquip velit commodo ex quis. Et sint ex deserunt consectetur.
+            <div id="child">
+                <h3>Child</h3>
+                Lorem ea ullamco consequat anim. Tempor adipisicing dolor reprehenderit voluptate. Ipsum amet magna esse nostrud esse eiusmod qui mollit. Dolore aliqua fugiat aliqua ut tempor mollit mollit laborum proident tempor. Aute exercitation ex labore incididunt. Est reprehenderit ullamco nisi sint in est nisi ex.
+            </div>
+        </div>
+    </body>
+</html>

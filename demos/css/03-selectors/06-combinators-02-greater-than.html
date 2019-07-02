@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Combinators - Greater than - Child selector</title>
+        <style>
+            div {
+                padding: 5px;
+            }
+            
+            .b > h4 {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Selectors - Combinators - &gt; - The Child Selector</h1>
+        <hr />
+
+        A &gt; between two selectors like so "a > b" selects all elements matching selector b that are children of an element matching selector a.
+
+        <br /><br />
+                
+        <div class="a d e" id="div-1" title="Div 1">
+            <h4>Div 1</h4>
+            <p>
+                Qui sint eu labore pariatur cillum labore minim voluptate elit ex dolor ad. Labore laborum id occaecat laborum dolor enim nisi pariatur non magna esse. Ullamco exercitation eiusmod magna ut aliquip non nulla mollit. Irure ut et nulla tempor reprehenderit ex aute aute cillum anim aliquip consequat aute culpa.
+            </p>
+            <div class="b d f" id="div-2" title="Div 2">
+                <h4>Div 2</h4>
+                <p>
+                    Sunt in id duis minim sunt. Tempor dolore adipisicing irure amet fugiat ut ullamco amet velit labore proident in. Laborum ipsum nulla aute nisi non magna veniam magna veniam laboris. Fugiat ut veniam nostrud ut voluptate ea nostrud. Non proident deserunt ut aliquip. Ex aliqua consequat commodo adipisicing exercitation consectetur 
+                    sunt consequat voluptate labore proident dolore qui est.
+                </p>
+                <div class="c e f" id="div-3" title="Div 3">
+                    <h4>Div 3</h4>
+                    <p>
+                        Qui reprehenderit incididunt culpa esse. Aliquip excepteur quis anim magna anim sit eiusmod quis eu. Voluptate quis laborum elit officia magna fugiat amet ex dolor consectetur esse commodo. Ut deserunt non culpa qui magna. Qui eu adipisicing sint commodo quis exercitation non anim labore velit quis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

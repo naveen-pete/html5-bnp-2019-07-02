@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Cascade of author styles</title>
+        <link rel="stylesheet" href="./css/sheet-1.css">
+        <style>
+            p {
+                color: red;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Cascade order of author styles</h1>
+        <hr />
+
+        Multiple author stylesheets (external stylesheets) can be included in a document. Also, styles may be embedded in a document in multiple style tags (embedded styles). All of these cascade in source order (in the order they appear). However inline styles get more preference and trump all other author styles.
+        <br/>
+        <strong>Note</strong>: We have used the same selector throughout (p). This has an effect on which style wins when there us conflict. We shall cover rules regarding this in the section on selector specificity.
+
+        <style>
+            p {
+                color: green;
+                font-size: 30px;
+            }
+        </style>
+
+        <h3>Embedded and external stylesheets get applied in source order. Conflicting property values get cascaded.</h3>
+        <p>
+            Pariatur eu ea ex officia. Minim do do consequat sunt. Elit ea commodo fugiat esse consequat nostrud sint elit aliquip ipsum proident. Esse exercitation enim quis incididunt velit est aute laborum minim esse officia aliqua tempor. Eu eu commodo amet Lorem ipsum cillum quis in amet ex enim irure.
+        </p>
+
+        <hr />
+        
+        <h3>Inline styles trump all others in case of conflict</h3>
+        <p style="color: blue;">
+            Pariatur eu ea ex officia. Minim do do consequat sunt. Elit ea commodo fugiat esse consequat nostrud sint elit aliquip ipsum proident. Esse exercitation enim quis incididunt velit est aute laborum minim esse officia aliqua tempor. Eu eu commodo amet Lorem ipsum cillum quis in amet ex enim irure.
+        </p>
+
+        <link rel="stylesheet" href="./css/sheet-2.css">
+        <style>
+            p {
+                color: gold;
+                font-size: 40px;
+            }
+        </style>
+        <link rel="stylesheet" href="./css/sheet-3.css">
+        <style>
+            p {
+                color: orange;
+                font-size: 50px;
+            }
+        </style>
+    </body>
+</html>

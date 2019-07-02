@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Box Model - The Margin Area</title>
+        <style>
+            body {
+                text-align: justify;
+            }
+
+            #para-1 {
+                margin: 10px 20px 30px 40px;
+            }
+
+            #para-2 {
+                margin: 1% 2% 3% 4%;
+            } 
+
+            div {
+                height: 100px;
+                margin: 3%;
+                line-height: 100px;
+                text-align: center;
+                background-color: crimson;
+                color: white;
+            }
+
+            .container {
+                font-size: 0px;
+            }
+
+            .container * {
+                font-size: initial;
+            }
+
+            .container > div {
+                display: inline-block;
+                width: 44%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Box Model - The Margin Area</h1>
+        <hr />
+
+        <p>
+            The margin area is the space between 2 elements. The margin on all directions can be adjusted individually. Margins can be specified in absolute (eg. px) or relative (eg. %) units. Margin has longhand properties and a shorthand (margin). Horizontal margins "add up", whereas vertical margins "collapse". However collapsing happens only in a block formatting context.
+        </p>
+
+        <p id="para-1">Para 1</p>        
+        <p id="para-2">Para 2</p>        
+        
+        <section class="container">
+            <div>Vertical margins add up here</div>
+            <div>Vertical margins add up here</div>
+            <div>Vertical margins add up here</div>
+            <div>Vertical margins add up here</div>
+        </section>
+
+        <div>Vertical margins collapse here</div>
+        <div>Vertical margins collapse here</div>
+    </body>
+</html>

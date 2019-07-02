@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Forms - Other input types</title>
+        <style>
+            form > div {
+                margin: 20px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="15-process-the-form.html" method="post" enctype="multipart/form-data">
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" />
+            </div>
+            
+            <div>
+                <label for="service">Service you are looking for</label>
+                <select id="service" name="service">
+                    <option value="1">To get a website built</option>
+                    <option value="2">Improve SEO of site</option>
+                    <option value="3">Migrating a website</option>
+                    <option selected value="4">Create a web app</option>
+                    <option value="5">Create a mobile app</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="newsletter-choices">Subscribe to newsletter?</label>
+                <div id="newsletter-choices">
+                    <label><input type="radio" value="yes" name="newsletter"> Yes</label>
+                    <label><input type="radio" value="no" name="newsletter"> No</label>
+                </div>
+            </div>
+
+            <div>
+                <label for="topics-choices">Select the topics you are interested in</label>
+                <div id="topics-choices">
+                    <label><input type="checkbox" value="web development" name="topics"> Web Development</label>
+                    <label><input type="checkbox" value="cloud computing" name="topics"> Cloud Computing</label>
+                    <label><input type="checkbox" value="data science" name="topics"> Data Science</label>
+                </div>
+            </div>
+
+            <div>
+                <label for="message">Message</label>
+                <div id="message">
+                    <textarea id="message" name="message" rows="8">Hi</textarea>
+                </div>
+            </div>
+
+            <div>
+                <label for="profile">Profile</label>
+                <input type="file" multiple id="profile" name="profile" />
+            </div>
+
+            <input type="submit" value="Send message" />
+            <input type="reset" value="Reset" />
+            <input type="button" value="Some button" />
+        </form>
+    </body>
+</html>

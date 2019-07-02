@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>The background-position property</title>
+        <style>
+            div {
+                box-sizing: border-box;
+                width: 100%;
+                height: 400px;
+                padding: 10px;
+                border: 5px dashed black;
+                margin-bottom: 20px;
+                background-image: url( './img/abstract-bg.jpeg' );
+                text-align: center;
+            }
+
+            .repeat-both-directions {
+                background-repeat: repeat;
+            }
+            
+            .repeat-neither-direction {
+                background-repeat: no-repeat;
+            }
+
+            .move-x25-y50-absolute-units {
+                background-position: 25px 50px;
+            }
+
+            .move-x50-y50-relative-units {
+                background-position: 50% 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The background-position property</h1>
+        <hr/>
+        <p>
+            By default, the first tile's top-left coordinates corresponds to the padding box top-left coordinates. However the top-left of the first tile can be shifted using background-position property. It takes both absolute units for offsets (px) and relative (% with respect to content width of element). With relative offsets (%) however, the center of the background image is positioned by the given values. Thus 50% horizontal and vertical offsets actually center the background image.
+        </p>
+
+
+        <div class="repeat-neither-direction move-x25-y50-absolute-units">
+            Adipisicing commodo nostrud voluptate eu est Lorem sunt dolor eu exercitation sint sit ea adipisicing. Et id incididunt aliquip et eu culpa aliquip. Laborum amet nulla ex id pariatur reprehenderit pariatur mollit sunt aute sit labore pariatur.
+        </div>
+
+        <div class="repeat-both-directions move-x25-y50-absolute-units">
+            Adipisicing commodo nostrud voluptate eu est Lorem sunt dolor eu exercitation sint sit ea adipisicing. Et id incididunt aliquip et eu culpa aliquip. Laborum amet nulla ex id pariatur reprehenderit pariatur mollit sunt aute sit labore pariatur.
+        </div>
+        
+        <div class="repeat-neither-direction move-x50-y50-relative-units">
+            Adipisicing commodo nostrud voluptate eu est Lorem sunt dolor eu exercitation sint sit ea adipisicing. Et id incididunt aliquip et eu culpa aliquip. Laborum amet nulla ex id pariatur reprehenderit pariatur mollit sunt aute sit labore pariatur.
+        </div>
+
+        <div class="repeat-both-directions move-x50-y50-relative-units">
+            Adipisicing commodo nostrud voluptate eu est Lorem sunt dolor eu exercitation sint sit ea adipisicing. Et id incididunt aliquip et eu culpa aliquip. Laborum amet nulla ex id pariatur reprehenderit pariatur mollit sunt aute sit labore pariatur.
+        </div>
+    </body>
+</html>

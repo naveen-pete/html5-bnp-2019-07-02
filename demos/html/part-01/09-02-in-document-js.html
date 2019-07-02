@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Inline event handling using JS</title>
+    </head>
+    <body>
+        <button id="btn-1">Click me</button>
+        <br />
+        Check the Developer tools console to see text being typed getting logged
+        <input type="text" id="input-1" />
+
+        <script>
+            document.querySelector( '#btn-1' ).onclick = function() {
+                alert( 'You clicked the button' );
+            };
+            document.querySelector( '#input-1' ).oninput = function() {
+                console.log( this.value );
+            };
+        </script>
+    </body>
+</html>

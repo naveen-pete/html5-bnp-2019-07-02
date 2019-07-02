@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>line-height</title>
+        <style>
+            #para-1 {
+                font-size: 20px;
+                line-height: 30px;
+            }
+
+            #para-2 {
+                font-size: 20px;
+                line-height: 1.5em; /* 1.5 * 20px = 30px */
+            }
+
+            #para-3 {
+                font-size: 20px;
+                line-height: 1.5; /* 1.5 * 20px = 30px */
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Setting line height - line-height</h1>
+        <hr />
+        The line-height property can be used with absolute (eg. px) units, relative units (eg. %, em etc.), or in unitless fashion. When used with %, it is a % of the computed font-size. When used unitless, it represents the factor to multiply the computed font-size by (similar to %). However, due to differences in the way the line-height property value is inherited, it is better to use unitless value for line height.
+        <br />
+        <strong>Reference:</strong> <a href="http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/">Eric Meyer's article on value with relative unit vs unitless value for line-height</a>
+        
+        <p id="para-1">
+            Dolore anim adipisicing laboris mollit minim duis ex sunt amet anim aute excepteur. Ullamco consequat irure ipsum nisi aute laborum deserunt pariatur enim nulla in veniam duis non. Sunt officia amet cillum velit cupidatat. Laboris ex labore proident elit aliquip commodo.
+        </p>
+
+        <p id="para-2">
+            Occaecat veniam cillum aute aliquip ut minim eu dolor. Excepteur reprehenderit ex exercitation sit consequat. Occaecat irure cupidatat culpa ut. Et laborum exercitation veniam esse occaecat labore amet culpa excepteur officia consequat. Fugiat fugiat Lorem sunt enim excepteur anim do ea. Veniam occaecat et laboris do laboris adipisicing reprehenderit adipisicing culpa elit non ipsum ut ad.
+        </p>
+
+        <p id="para-3">
+            Occaecat veniam cillum aute aliquip ut minim eu dolor. Excepteur reprehenderit ex exercitation sit consequat. Occaecat irure cupidatat culpa ut. Et laborum exercitation veniam esse occaecat labore amet culpa excepteur officia consequat. Fugiat fugiat Lorem sunt enim excepteur anim do ea. Veniam occaecat et laboris do laboris adipisicing reprehenderit adipisicing culpa elit non ipsum ut ad.
+        </p>
+    </body>
+</html>

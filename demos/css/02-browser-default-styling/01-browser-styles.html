@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>The Browser styles (useragent stylesheet)</title>
+        <style>
+            body {
+                margin: 0;
+            }
+
+            .btn {
+                display: inline-block;
+                padding: 10px 20px;
+                border: 1px solid olive;
+                border-radius: 4px;
+                text-decoration: none;
+                background-color: lightgreen;
+                color: black;
+            }
+
+            .btn:hover {
+                background-color: greenyellow;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The Browser styles (useragent stylesheet)</h1>
+        <hr />
+
+        <h3>Useragent stylesheet</h3>
+        The browser provides default styles for many elements. Some examples are...
+        <ul>
+            <li>Most browsers provide a small margin for the body element</li>
+            <li>Lists have default styles like padding etc. and are bulleted/numbered.</li>
+            <li>Links are underlined, colored in blue (unvisited) and have different colors in different "states" - for example, when active they have a different color (mouse is clicked and held over them); once visited they have another color (linked document is present is browser's history).</li>
+        </ul>
+
+        <hr />
+
+        <h3>Overriding the default styles by the author's stylesheet</h3>
+        The default styles can be overriden by author styles (as a developer you are the author of a web page and its styles). For example, we can remove margins for the body, or apply CSS to style a link to look like a button. We have earlier also seen how to change bullets/numbering in a list or even remove them completely.
+        <h3>Link styled as a button</h3>
+        <a href="https://www.google.com" target="_blank" class="btn">Google search</a>
+    </body>
+</html>

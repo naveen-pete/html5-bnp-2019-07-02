@@ -1,0 +1,13 @@
+/* This is a CSS comment */
+#first-para, #second-para { /* 2 id selectors */
+    color: crimson;
+}
+
+.highlight { /* a class selector */
+    background-color: yellow;
+}
+
+.green {
+    color: green;
+    font-style: italic;
+}

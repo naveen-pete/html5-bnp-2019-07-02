@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Introduction - The Element Box</title>
+        <style>
+            div {
+                width: 90%; /* content width of div is 90% of parent's content width */
+                max-width: 960px; /* subject to a maximum width of 960px */
+                padding: 20px;
+                border: 1px solid black;
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Introduction to the Box Model - The Element Box</h1>
+        <hr />
+
+        <p>
+            Every element gets a rectangular space (box) in the rendered document where the content of the element, its borders etc. go in. The boxes are allocated in source order starting from the top of the document. The width of each box depends on whether its display is inline, block etc. and explicit settings for the different dimensions of the box.
+        </p>
+        <p>
+            A box has 4 parts. Some CSS properties related to each part are mentioned.
+            <ul>
+                <li>Content area - width, height, max-width, min-height etc.</li>
+                <li>Padding - padding-top, padding (shorthand) etc.</li>
+                <li>Border - border-top-style, border-width (shorthand), border (shorthand) etc.</li>
+                <li>Margin - margin-right, margin (shorthand) etc.</li>
+            </ul>
+        </p>
+
+        <div>
+            Quis reprehenderit Lorem occaecat id aliqua commodo mollit sunt mollit. Quis laboris est labore cillum qui ea consequat exercitation ut ullamco enim. Ut ut cillum exercitation aliqua excepteur et magna commodo sunt ea. Do amet nisi ut qui non sit qui laboris exercitation adipisicing. Excepteur nisi tempor anim nulla nostrud labore. Exercitation non enim duis ex fugiat veniam. Qui officia occaecat sunt reprehenderit eiusmod qui eu adipisicing ex amet.
+        </div>
+        <div>
+            Quis reprehenderit Lorem occaecat id aliqua commodo mollit sunt mollit. Quis laboris est labore cillum qui ea consequat exercitation ut ullamco enim. Ut ut cillum exercitation aliqua excepteur et magna commodo sunt ea. Do amet nisi ut qui non sit qui laboris exercitation adipisicing. Excepteur nisi tempor anim nulla nostrud labore. Exercitation non enim duis ex fugiat veniam. Qui officia occaecat sunt reprehenderit eiusmod qui eu adipisicing ex amet.
+        </div>
+    </body>
+</html>

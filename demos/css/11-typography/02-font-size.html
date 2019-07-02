@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>font-size</title>
+        <style>
+            html {
+                font-size: 12px;
+            }
+
+            body {
+                font-size: 20px;
+            }
+
+            #para-1 {
+                font-size: 16px; /* overrides inherited value */    
+            }
+
+            #para-2 {
+                /* Double the inherited font-size value */
+                font-size: 2em; /* 2 * 20px = 40px */
+            }
+            
+            #para-3 {
+                /* DOuble the root element's (html element's) font-size value */
+                font-size: 2rem; /* 2 * 12px = 24px */
+            }
+
+            #para-4 {
+                font-size: 1.5em; /* 1.5 * 20px = 30px */
+            }
+
+            #para-4 > span:nth-child(1) {
+                /* inherits 30px but overrides it like below */
+                font-size: 2em; /* 2 * 30px = 60px */
+            }
+
+            #para-4 > span:nth-child(2) {
+                /* inherits 30px but since font-size is set in rem, the factor specified is multiplied by the font-size of the root html element */
+                font-size: 2rem; /* 2 * 12px = 24px */
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Setting font size - font-size</h1>
+        <hr />
+
+        <p>
+            Font sizes can be specified in absolute (px, cm etc.) or relative (%, em, rem stc.) units. For example, when specified in em unit, the font size inherited from parent is multiplied by the given number. For rem, the given number is multiplied by the base font-size (font-size of either html element - this is called root element - 'r' in rem stands for root).
+        </p>
+
+        <p id="para-1">
+            Minim cupidatat velit sunt qui deserunt ut adipisicing. Enim commodo enim sunt non. Ipsum est ipsum duis nisi velit ipsum minim. Qui do tempor pariatur nostrud sit minim anim aute aliquip pariatur culpa.
+        </p>
+        <p id="para-2">
+            Nostrud irure aliquip amet aute adipisicing. Duis exercitation minim deserunt laborum dolor do qui elit adipisicing voluptate esse consequat quis cupidatat. Anim consectetur amet enim cillum qui. Magna non eu magna pariatur nisi consectetur magna incididunt esse elit minim nostrud culpa. Deserunt non cupidatat non ullamco in nostrud labore ad. Enim et nostrud sit eiusmod esse. Ea velit eiusmod nisi labore ex minim occaecat ullamco irure ea veniam labore et.
+        </p>
+        <p id="para-3">
+            Nostrud in eu reprehenderit officia et est in ad non sint cupidatat eiusmod. Incididunt deserunt minim ullamco sint eiusmod. Nulla minim id ipsum amet sint minim cupidatat duis culpa tempor voluptate irure ipsum anim. Tempor adipisicing quis velit minim qui laborum magna amet occaecat ut.
+        </p>
+
+        <p id="para-4">
+            <span>Span 1 within para 4</span>
+            <span>Span 2 within para 4</span>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Box Model - The Content Area</title>
+        <style>
+            div.demo-1 {
+                /* content width of div is 90% of parent's content width */
+                width: 90%;
+                /* subject to a maximum width of 960px */
+                max-width: 960px;
+                /* minimum height of element - if element requires more height, then it will get the required height - in any case the height will not fall below 100px */
+                min-height: 100px;
+                
+                padding: 30px;
+                border: 1px solid black;
+                /* 
+                    Note:
+                        Total width will be 960px + 2 * 30px + 2 * 1px = 1022px (when viewport is full size)
+                        Total width will be 90% parent (body) width + 2 * 30px * 2 * 1px (when viewport is of small width)
+                        Mimimum content area height is 100px. Mimimum total height will be 100px + 2 * 30px + 2 * 1px = 162px (when viewport is full size)
+                */
+            }
+
+            div.demo-2 {
+                box-sizing: border-box; /* default value is content-box */
+                
+                /* width of div (including padding and border areas) is 90% of parent's content width */
+                width: 90%;
+                /* subject to a maximum width (including padding and border areas) of 960px */
+                max-width: 960px;
+                /* minimum height of element - if element requires more height, then it will get the required height - in any case the height will not fall below 100px */
+                min-height: 100px;
+                
+                padding: 30px;
+                border: 1px solid black;
+
+                /* 
+                    Note:
+                        Total width will be 960px. Thus content width will be 960px - 2 * 30px - 2 * 1px = 898px (when viewport is full size)
+                        Total width will be 90% parent (body) width. Thus content width will be 90% body width - 2 * 30px - 2 * 1px (when viewport is of small width).
+                        Mimimum height (including padding and border areas) will be 100px. Mimimum content area height will be 100px - 2 * 30px - 2 * 1px = 38px (when viewport is full size)
+                */
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Box Model - The Content Area</h1>
+        <hr />
+
+        <p>
+            The content area is where all HTML content like text, images etc. get rendered. Block and inline block elements are affected by the CSS properties for controlling content area - width, height, min-width, min-height, max-width, max-height. Relative units are with respect to parent box dimensions.
+        </p>
+
+        <div class="demo-1">
+            Demo 1
+            <br />
+            Quis reprehenderit Lorem occaecat id aliqua commodo mollit sunt mollit. Quis laboris est labore cillum qui ea consequat exercitation ut ullamco enim.
+        </div>
+        <div class="demo-1">
+            Demo 1
+            <br />
+            Quis reprehenderit Lorem occaecat id aliqua commodo mollit sunt mollit. Quis laboris est labore cillum qui ea consequat exercitation ut ullamco enim. Ut ut cillum exercitation aliqua excepteur et magna commodo sunt ea. Do amet nisi ut qui non sit qui laboris exercitation adipisicing. Excepteur nisi tempor anim nulla nostrud labore. Exercitation non enim duis ex fugiat veniam. Qui officia occaecat sunt reprehenderit eiusmod qui eu adipisicing ex amet.
+        </div>
+
+        <hr />
+
+        <p>
+            By default, the width specified is applied for content area of the box and not the box as a whole. However this behavior can be controlled using the box-sizing property. It takes value border-box apart from the default content-box.
+        </p>
+
+        <div class="demo-2">
+            Demo 2
+            <br />
+            Quis reprehenderit Lorem occaecat id aliqua commodo mollit sunt mollit. Quis laboris est labore cillum qui ea consequat exercitation ut ullamco enim.
+        </div>
+        <div class="demo-2">
+            Demo 2
+            <br />
+            Quis reprehenderit Lorem occaecat id aliqua commodo mollit sunt mollit. Quis laboris est labore cillum qui ea consequat exercitation ut ullamco enim. Ut ut cillum exercitation aliqua excepteur et magna commodo sunt ea. Do amet nisi ut qui non sit qui laboris exercitation adipisicing. Excepteur nisi tempor anim nulla nostrud labore. Exercitation non enim duis ex fugiat veniam. Qui officia occaecat sunt reprehenderit eiusmod qui eu adipisicing ex amet.
+        </div>
+    </body>
+</html>

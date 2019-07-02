@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Inheritance of styles</title>
+        <style>
+            #parent {
+                color: crimson;
+                padding: 10px;
+                border: 1px solid black;
+            }
+
+            #child {
+                color: initial;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Explicitly preventing inheritance of property value</h1>
+        <hr />
+
+        Use the initial keyword as value of a property in child, to explicitly set the property's value in child to the default.
+
+        <div id="parent">
+            <h3>Parent</h3>
+            Labore in mollit sunt laboris nulla ullamco proident ad fugiat Lorem nisi. Id adipisicing amet amet mollit duis labore pariatur aliquip velit commodo ex quis. Et sint ex deserunt consectetur.
+            <div id="child">
+                <h3>Child</h3>
+                Lorem ea ullamco consequat anim. Tempor adipisicing dolor reprehenderit voluptate. Ipsum amet magna esse nostrud esse eiusmod qui mollit. Dolore aliqua fugiat aliqua ut tempor mollit mollit laborum proident tempor. Aute exercitation ex labore incididunt. Est reprehenderit ullamco nisi sint in est nisi ex.
+            </div>
+        </div>
+    </body>
+</html>

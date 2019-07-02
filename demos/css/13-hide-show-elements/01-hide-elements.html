@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Techniques for Hiding elements</title>
+        <style>
+            .display-none {
+                display: none;
+            }
+
+            .visibility-hidden {
+                visibility: hidden;
+            }
+
+            .partially-transparent {
+                opacity: 0.5;
+            }
+
+            .fully-transparent {
+                opacity: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Techniques for Hiding Elements</h1>
+        <hr />
+
+        <h3>display: none results in element being removed completely</h3>
+        <p class="para-first">
+            <strong>First para</strong>
+            <br />
+            Velit esse cillum consequat labore magna aliqua cillum deserunt nostrud ea. Laboris fugiat pariatur in ex. Sit amet commodo enim sit ullamco cupidatat est est quis esse eu. Reprehenderit incididunt laborum dolor ad pariatur. Reprehenderit nisi est minim eu. Commodo et culpa dolor cillum voluptate qui sunt occaecat nostrud ullamco proident esse. Sunt elit sint duis sunt est amet esse mollit qui. Eiusmod commodo consequat ullamco labore laborum consectetur deserunt eu ea eu dolore amet fugiat. Enim amet reprehenderit est est non incididunt nisi quis mollit. Incididunt ea sunt sit dolor in aute. Esse minim ipsum adipisicing labore reprehenderit.
+        </p>
+
+        <p class="para-between display-none">
+            <strong>Para in-between</strong>
+            <br />
+            Velit esse cillum consequat labore magna aliqua cillum deserunt nostrud ea. Laboris fugiat pariatur in ex. Sit amet commodo enim sit ullamco cupidatat est est quis esse eu. Reprehenderit incididunt laborum dolor ad pariatur. Reprehenderit nisi est minim eu. Commodo et culpa dolor cillum voluptate qui sunt occaecat nostrud ullamco proident esse. Sunt elit sint duis sunt est amet esse mollit qui. Eiusmod commodo consequat ullamco labore laborum consectetur deserunt eu ea eu dolore amet fugiat. Enim amet reprehenderit est est non incididunt nisi quis mollit. Incididunt ea sunt sit dolor in aute. Esse minim ipsum adipisicing labore reprehenderit.
+        </p>
+
+        <p class="para-last">
+            <strong>Last para</strong>
+            <br />
+            Velit esse cillum consequat labore magna aliqua cillum deserunt nostrud ea. Laboris fugiat pariatur in ex. Sit amet commodo enim sit ullamco cupidatat est est quis esse eu. Reprehenderit incididunt laborum dolor ad pariatur. Reprehenderit nisi est minim eu. Commodo et culpa dolor cillum voluptate qui sunt occaecat nostrud ullamco proident esse. Sunt elit sint duis sunt est amet esse mollit qui. Eiusmod commodo consequat ullamco labore laborum consectetur deserunt eu ea eu dolore amet fugiat. Enim amet reprehenderit est est non incididunt nisi quis mollit. Incididunt ea sunt sit dolor in aute. Esse minim ipsum adipisicing labore reprehenderit.
+        </p>
+
+        <hr />
+
+        <h3>visibility: hidden results in box space for element being preserved</h3>
+        <p class="para-first">
+            <strong>First para</strong>
+            <br />
+            Velit esse cillum consequat labore magna aliqua cillum deserunt nostrud ea. Laboris fugiat pariatur in ex. Sit amet commodo enim sit ullamco cupidatat est est quis esse eu. Reprehenderit incididunt laborum dolor ad pariatur. Reprehenderit nisi est minim eu. Commodo et culpa dolor cillum voluptate qui sunt occaecat nostrud ullamco proident esse. Sunt elit sint duis sunt est amet esse mollit qui. Eiusmod commodo consequat ullamco labore laborum consectetur deserunt eu ea eu dolore amet fugiat. Enim amet reprehenderit est est non incididunt nisi quis mollit. Incididunt ea sunt sit dolor in aute. Esse minim ipsum adipisicing labore reprehenderit.
+        </p>
+
+        <p class="para-between visibility-hidden">
+            <strong>Para in-between</strong>
+            <br />
+            Velit esse cillum consequat labore magna aliqua cillum deserunt nostrud ea. Laboris fugiat pariatur in ex. Sit amet commodo enim sit ullamco cupidatat est est quis esse eu. Reprehenderit incididunt laborum dolor ad pariatur. Reprehenderit nisi est minim eu. Commodo et culpa dolor cillum voluptate qui sunt occaecat nostrud ullamco proident esse. Sunt elit sint duis sunt est amet esse mollit qui. Eiusmod commodo consequat ullamco labore laborum consectetur deserunt eu ea eu dolore amet fugiat. Enim amet reprehenderit est est non incididunt nisi quis mollit. Incididunt ea sunt sit dolor in aute. Esse minim ipsum adipisicing labore reprehenderit.
+        </p>
+
+        <p class="para-last">
+            <strong>Last para</strong>
+            <br />
+            Velit esse cillum consequat labore magna aliqua cillum deserunt nostrud ea. Laboris fugiat pariatur in ex. Sit amet commodo enim sit ullamco cupidatat est est quis esse eu. Reprehenderit incididunt laborum dolor ad pariatur. Reprehenderit nisi est minim eu. Commodo et culpa dolor cillum voluptate qui sunt occaecat nostrud ullamco proident esse. Sunt elit sint duis sunt est amet esse mollit qui. Eiusmod commodo consequat ullamco labore laborum consectetur deserunt eu ea eu dolore amet fugiat. Enim amet reprehenderit est est non incididunt nisi quis mollit. Incididunt ea sunt sit dolor in aute. Esse minim ipsum adipisicing labore reprehenderit.
+        </p>
+
+        <hr />
+
+        <h3>opacity: value between [0 - 1] results in box becoming partially transparent. Any content behind the box will be partially seen.</h3>
+        <p class="para-first">
+            <strong>First para</strong>
+            <br />
+            Velit esse cillum consequat labore magna aliqua cillum deserunt nostrud ea. Laboris fugiat pariatur in ex. Sit amet commodo enim sit ullamco cupidatat est est quis esse eu. Reprehenderit incididunt laborum dolor ad pariatur. Reprehenderit nisi est minim eu. Commodo et culpa dolor cillum voluptate qui sunt occaecat nostrud ullamco proident esse. Sunt elit sint duis sunt est amet esse mollit qui. Eiusmod commodo consequat ullamco labore laborum consectetur deserunt eu ea eu dolore amet fugiat. Enim amet reprehenderit est est non incididunt nisi quis mollit. Incididunt ea sunt sit dolor in aute. Esse minim ipsum adipisicing labore reprehenderit.
+        </p>
+
+        <p class="para-between partially-transparent">
+            <strong>Para in-between</strong>
+            <br />
+            Velit esse cillum consequat labore magna aliqua cillum deserunt nostrud ea. Laboris fugiat pariatur in ex. Sit amet commodo enim sit ullamco cupidatat est est quis esse eu. Reprehenderit incididunt laborum dolor ad pariatur. Reprehenderit nisi est minim eu. Commodo et culpa dolor cillum voluptate qui sunt occaecat nostrud ullamco proident esse. Sunt elit sint duis sunt est amet esse mollit qui. Eiusmod commodo consequat ullamco labore laborum consectetur deserunt eu ea eu dolore amet fugiat. Enim amet reprehenderit est est non incididunt nisi quis mollit. Incididunt ea sunt sit dolor in aute. Esse minim ipsum adipisicing labore reprehenderit.
+        </p>
+
+        <p class="para-last">
+            <strong>Last para</strong>
+            <br />
+            Velit esse cillum consequat labore magna aliqua cillum deserunt nostrud ea. Laboris fugiat pariatur in ex. Sit amet commodo enim sit ullamco cupidatat est est quis esse eu. Reprehenderit incididunt laborum dolor ad pariatur. Reprehenderit nisi est minim eu. Commodo et culpa dolor cillum voluptate qui sunt occaecat nostrud ullamco proident esse. Sunt elit sint duis sunt est amet esse mollit qui. Eiusmod commodo consequat ullamco labore laborum consectetur deserunt eu ea eu dolore amet fugiat. Enim amet reprehenderit est est non incididunt nisi quis mollit. Incididunt ea sunt sit dolor in aute. Esse minim ipsum adipisicing labore reprehenderit.
+        </p>
+
+        <hr />
+
+        <h3>opacity: 0 results in box becoming fully transparent (essentially hidden). This effectively gives the same result as visibility: hidden</h3>
+        <p class="para-first">
+            <strong>First para</strong>
+            <br />
+            Velit esse cillum consequat labore magna aliqua cillum deserunt nostrud ea. Laboris fugiat pariatur in ex. Sit amet commodo enim sit ullamco cupidatat est est quis esse eu. Reprehenderit incididunt laborum dolor ad pariatur. Reprehenderit nisi est minim eu. Commodo et culpa dolor cillum voluptate qui sunt occaecat nostrud ullamco proident esse. Sunt elit sint duis sunt est amet esse mollit qui. Eiusmod commodo consequat ullamco labore laborum consectetur deserunt eu ea eu dolore amet fugiat. Enim amet reprehenderit est est non incididunt nisi quis mollit. Incididunt ea sunt sit dolor in aute. Esse minim ipsum adipisicing labore reprehenderit.
+        </p>
+
+        <p class="para-between fully-transparent">
+            <strong>Para in-between</strong>
+            <br />
+            Velit esse cillum consequat labore magna aliqua cillum deserunt nostrud ea. Laboris fugiat pariatur in ex. Sit amet commodo enim sit ullamco cupidatat est est quis esse eu. Reprehenderit incididunt laborum dolor ad pariatur. Reprehenderit nisi est minim eu. Commodo et culpa dolor cillum voluptate qui sunt occaecat nostrud ullamco proident esse. Sunt elit sint duis sunt est amet esse mollit qui. Eiusmod commodo consequat ullamco labore laborum consectetur deserunt eu ea eu dolore amet fugiat. Enim amet reprehenderit est est non incididunt nisi quis mollit. Incididunt ea sunt sit dolor in aute. Esse minim ipsum adipisicing labore reprehenderit.
+        </p>
+
+        <p class="para-last">
+            <strong>Last para</strong>
+            <br />
+            Velit esse cillum consequat labore magna aliqua cillum deserunt nostrud ea. Laboris fugiat pariatur in ex. Sit amet commodo enim sit ullamco cupidatat est est quis esse eu. Reprehenderit incididunt laborum dolor ad pariatur. Reprehenderit nisi est minim eu. Commodo et culpa dolor cillum voluptate qui sunt occaecat nostrud ullamco proident esse. Sunt elit sint duis sunt est amet esse mollit qui. Eiusmod commodo consequat ullamco labore laborum consectetur deserunt eu ea eu dolore amet fugiat. Enim amet reprehenderit est est non incididunt nisi quis mollit. Incididunt ea sunt sit dolor in aute. Esse minim ipsum adipisicing labore reprehenderit.
+        </p>
+    </body>
+</html>

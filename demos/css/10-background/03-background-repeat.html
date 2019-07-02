@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>The background-repeat property</title>
+        <style>
+            body {
+                background-image: url( './img/green-bg.jpg' );
+            }
+
+            .size-400x400 {
+                width: 400px;
+                height: 400px;
+                padding: 10px;
+                border: 5px dashed black;
+                margin: 20px;
+                background-image: url( './img/abstract-bg.jpeg' );
+            }
+
+            .repeat-both-directions {
+                background-repeat: repeat;
+            }
+            
+            .repeat-neither-direction {
+                background-repeat: no-repeat;
+            }
+
+            .repeat-horizontally {
+                background-repeat: repeat-x;
+            }
+
+            .repeat-vertically {
+                background-repeat: repeat-y;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The background-repeat property</h1>
+        <hr/>
+        <p>
+            If the background image width or height is less than the element's width and height (padding box along with right and bottom borders), the background image will by default be tiled in one or both directions (vertical, horizontal) in order to fill up the entire box (border box). This behavior can be controlled using the background-repeat property, so that tiling occurs only in one direction instead, or in neither direction. The first tile's top-left coordinates corresponds to the padding box top-left coordinates.
+            <br />
+            <strong>Aside</strong>: Unlike "border box" there is no term called "padding box" as padding-box isn't a valid value for the box-sizing property.
+        </p>
+
+        <div class="size-400x400 repeat-both-directions">
+            Adipisicing commodo nostrud voluptate eu est Lorem sunt dolor eu exercitation sint sit ea adipisicing. Et id incididunt aliquip et eu culpa aliquip. Laborum amet nulla ex id pariatur reprehenderit pariatur mollit sunt aute sit labore pariatur.
+        </div>
+
+        <div class="size-400x400 repeat-neither-direction">
+            Adipisicing commodo nostrud voluptate eu est Lorem sunt dolor eu exercitation sint sit ea adipisicing. Et id incididunt aliquip et eu culpa aliquip. Laborum amet nulla ex id pariatur reprehenderit pariatur mollit sunt aute sit labore pariatur.
+        </div>
+        
+        <div class="size-400x400 repeat-horizontally">
+            Adipisicing commodo nostrud voluptate eu est Lorem sunt dolor eu exercitation sint sit ea adipisicing. Et id incididunt aliquip et eu culpa aliquip. Laborum amet nulla ex id pariatur reprehenderit pariatur mollit sunt aute sit labore pariatur.
+        </div>
+
+        <div class="size-400x400 repeat-vertically">
+            Adipisicing commodo nostrud voluptate eu est Lorem sunt dolor eu exercitation sint sit ea adipisicing. Et id incididunt aliquip et eu culpa aliquip. Laborum amet nulla ex id pariatur reprehenderit pariatur mollit sunt aute sit labore pariatur.
+        </div>
+    </body>
+</html>

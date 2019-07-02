@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .icon {
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                background-image: url( "./img/icon-sprite.png" );
+            }
+            
+            .icon-refresh {
+                background-position: -24px -24px;
+            }
+
+            .icon-target {
+                background-position: -48px -48px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Image sprites - An application of background properties</h1>
+        <hr />
+        
+        <p>
+            Sprite images are images which have portions dedicated to individual images. They are used to serve up multiple images in a single image file, thus reducing network latency involved in transferring multiple individual images. Background related properties can be used to effectively set a given portion of the image sprite as background of an element. This technique is used to create classes to display icons on a page.
+        </p>
+        <span class="icon icon-refresh"></span>
+        <span class="icon icon-target"></span>
+        <span class="icon icon-refresh"></span>
+    </body>
+</html>

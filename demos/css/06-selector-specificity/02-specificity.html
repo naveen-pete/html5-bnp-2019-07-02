@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Specificity of selectors</title>
+        <style>
+            /* Selector 1 specificity: (0, 1, 2, 4) */
+            section#intro p > span.title span.logo {
+                color: crimson;
+            }
+
+            /* Selector 2 specificity: (0, 1, 2, 3) */
+            section#intro p span.title .logo {
+                color: olive;
+            }
+
+            /* Selector 3 specificity: (0, 1, 2, 4) */
+            section p#intro-para > span.title span.logo {
+                color: gold;
+            }
+
+            /* Selector 4 specificity: (0, 0, 1, 0) */
+            .logo-important {
+                color: purple !important;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Specificity of Selectors</h1>
+        <hr />
+        
+        For every selector, the browser assigns a four-tuple (a, b, c, d) called specificity. This is calculated as follows...
+        <ol>
+            <li>a = 1 for inline styles and 0 otherwise</li>
+            <li>b is number of ids in the selector</li>
+            <li>c is number of classes in the selector</li>
+            <li>d is number of tags that appear in the selector</li>
+        </ol>
+        For example, if the selector is "section#intro p > span.title span.logo", the values of a, b, c, d are
+        <ol>
+            <li>Since the styling is not online, a = 0</li>
+            <li>b = 1 (only 1 id - intro)</li>
+            <li>c = 2 (title and logo)</li>
+            <li>d = 4 (section, p, span x 2)</li>
+        </ol>
+        Thus the specificity of the selector is (0, 1, 2, 4).
+        <br/>
+        <p>
+            <ul>
+                <li>
+                    Ties on property values between 2 selectors are broken based on specificity of selectors. Compare from left to right (a, then b, then d) till tie is broken. Select the property value of selector with greater tie-breaker value to break tie. In case 2 selectors have same specificity value, then order matters and the last style wins.
+                </li>
+                <li>
+                    Since inline styles have a = 1, they will trump all other styles.
+                </li>
+                <li>
+                    A property marked with !important will trump even inline styles. However marking a property with !important breaks the rules regarding specificity and makes styles unmanagebale. Use it sparingly and only when you definitely want to apply certain styles in every situtaion. Example, a class to mark text as bold can be defined as ".bold { font-weight: bold !important; }"
+                </li>
+        </p>
+
+        <section id="intro">
+            <p>
+                <span class="title">
+                    <span class="logo">ABC</span>
+                </span>
+            </p>
+            <p id="intro-para">
+                <span class="title">
+                    <span class="logo">ABC</span>
+                </span>
+            </p>
+            <p id="intro-para">
+                <span class="title">
+                    <span class="logo" style="color: olive;">ABC</span> <!-- (1, 0, 0, 0) -->
+                </span>
+            </p>
+            <p id="intro-para">
+                <span class="title">
+                    <span class="logo-important" style="color: olive;">ABC</span> <!-- (1, 0, 0, 0) -->
+                </span>
+            </p>
+        </section>
+    </body>
+</html>

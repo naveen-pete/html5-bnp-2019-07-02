@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Shorthand Properties</title>
+        <style>
+            #para-1 {
+                font-style: italic;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 1.5;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            #para-2 {
+                font: italic bold 20px/1.5 Arial, Helvetica, sans-serif;
+            }
+
+            #para-3 {
+                font-size: 12px;
+                line-height: 40px;
+                font-weight: bold;
+            }
+
+            #para-3 {
+                font: italic 20px Arial, Helvetica, sans-serif;
+            }
+
+            #para-4 {
+                padding: 10px;
+                border-style: solid;
+                border-color: crimson;
+                border-top-width: 1px;
+                border-right-width: 5px;
+                border-bottom-width: 10px;
+                border-left-width: 20px;
+            }
+
+            #para-5 {
+                padding: 10px;
+                border-style: solid;
+                border-color: crimson;
+                border-width: 1px 5px 10px 20px;
+            }
+
+            #para-6 {
+                padding: 10px;
+                border-style: solid;
+                border-color: crimson;
+                border-width: 1px 5px 10px; /* same as border-width: 1px 5px 10px 5px; */
+            }
+
+            #para-7 {
+                padding: 10px;
+                border-style: solid;
+                border-color: crimson;
+                border-width: 1px; /* same as border-width: 1px 1px 1px 1px; */
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Shorthand Properties</h1>
+        <hr />
+
+        <h3>Intoduction to shorthand properties</h3>
+        Some CSS properties are related and hence can be set in one go using "shorthand" properties. Example, many font-related properties can be set together using the "font" shorthand property.
+        <p id="para-1">
+            Para 1
+            <br />
+            Ad deserunt voluptate ullamco consequat excepteur laboris non sit pariatur. Dolor officia veniam adipisicing magna deserunt id veniam minim. Incididunt minim reprehenderit fugiat in nisi ullamco anim ipsum ea deserunt minim velit. Laboris eiusmod nostrud ipsum occaecat velit eiusmod. Sit ea elit proident non laboris quis excepteur. Proident Lorem ea velit proident consequat id nisi nulla. Enim consectetur nisi reprehenderit pariatur elit deserunt.
+        </p>
+        <p id="para-2">
+            Para 2
+            <br />
+            Ad deserunt voluptate ullamco consequat excepteur laboris non sit pariatur. Dolor officia veniam adipisicing magna deserunt id veniam minim. Incididunt minim reprehenderit fugiat in nisi ullamco anim ipsum ea deserunt minim velit. Laboris eiusmod nostrud ipsum occaecat velit eiusmod. Sit ea elit proident non laboris quis excepteur. Proident Lorem ea velit proident consequat id nisi nulla. Enim consectetur nisi reprehenderit pariatur elit deserunt.
+        </p>
+
+        <hr />
+        <h3>A problem with shorthand properties</h3>
+        Shorthand properties set default values for properties not set, potentially overriding values set earlier using "longhand" properties too. This can lead to confusion and defficult to track bugs. Hence use shorthand properties sparingly and with discretion.
+        <p id="para-3">
+            Para 3
+            <br />
+            Ad deserunt voluptate ullamco consequat excepteur laboris non sit pariatur. Dolor officia veniam adipisicing magna deserunt id veniam minim. Incididunt minim reprehenderit fugiat in nisi ullamco anim ipsum ea deserunt minim velit. Laboris eiusmod nostrud ipsum occaecat velit eiusmod. Sit ea elit proident non laboris quis excepteur. Proident Lorem ea velit proident consequat id nisi nulla. Enim consectetur nisi reprehenderit pariatur elit deserunt.
+        </p>
+        
+        <hr />
+        <h3>Shorthands involving directions</h3>
+        Additionally when directions are involved while setting values of shorthand properties, the directions follow the markings 12, 3, 6, 9 on a clock (clockwise, in the order top->right->bottom->left). Example, border is used to set border-top, border-right, border-bottom, border-left in that order. When the value for a direction is missing, it is assigned the value of the opposite direction. If a single value is specified, it is applied for all 4 directions.
+        <p id="para-4">
+            Para 4
+            <br />
+            Magna nulla ex veniam elit aliqua. Voluptate occaecat proident non amet do. Ullamco consectetur dolor sit reprehenderit ut aliqua amet ea cupidatat. Ea nulla cillum ea exercitation voluptate commodo incididunt dolor aliqua tempor anim proident. Reprehenderit id consequat dolore non consectetur. Sit enim veniam ex nostrud tempor culpa mollit. Irure id eu aliquip minim.
+        </p>
+        <p id="para-5">
+            Para 5
+            <br />
+            Magna nulla ex veniam elit aliqua. Voluptate occaecat proident non amet do. Ullamco consectetur dolor sit reprehenderit ut aliqua amet ea cupidatat. Ea nulla cillum ea exercitation voluptate commodo incididunt dolor aliqua tempor anim proident. Reprehenderit id consequat dolore non consectetur. Sit enim veniam ex nostrud tempor culpa mollit. Irure id eu aliquip minim.
+        </p>
+        <p id="para-6">
+            Para 6
+            <br />
+            Magna nulla ex veniam elit aliqua. Voluptate occaecat proident non amet do. Ullamco consectetur dolor sit reprehenderit ut aliqua amet ea cupidatat. Ea nulla cillum ea exercitation voluptate commodo incididunt dolor aliqua tempor anim proident. Reprehenderit id consequat dolore non consectetur. Sit enim veniam ex nostrud tempor culpa mollit. Irure id eu aliquip minim.
+        </p>
+        <p id="para-7">
+            Para 7
+            <br />
+            Magna nulla ex veniam elit aliqua. Voluptate occaecat proident non amet do. Ullamco consectetur dolor sit reprehenderit ut aliqua amet ea cupidatat. Ea nulla cillum ea exercitation voluptate commodo incididunt dolor aliqua tempor anim proident. Reprehenderit id consequat dolore non consectetur. Sit enim veniam ex nostrud tempor culpa mollit. Irure id eu aliquip minim.
+        </p>
+    </body>
+</html>

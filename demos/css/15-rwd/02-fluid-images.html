@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Fluid Images</title>
+        <style>
+            header {
+                width: 100%;
+                text-align: center;
+            }
+
+            #content {
+                overflow: auto;
+            }
+
+            #sidebar, #main-content {
+                float: left;
+            }
+
+            #sidebar {
+                box-sizing: border-box;
+                width: 23%;
+                padding: 16px 2%;
+                border-right: 1px solid crimson;
+            }
+
+            #main-content {
+                box-sizing: border-box;
+                width: 75%;
+                padding: 0 2%;
+                border-left: 1px solid crimson;
+                margin-left: -1px;
+            }
+
+            footer {
+                width: 70%;
+                padding-top: 20px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .img-responsive {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>RWD - Fluid Layout</h1>
+        <hr />
+
+        <p>
+            Fluid layout is a Responsive Web Design (RWD) technique where horizontal dimensions (widths, horizontal paddings, borders &amp; margins) are specified in percentages (%). Since borders can't be specified in percentages, box-sizing: border-box is normally used when borders are present for elements. As a result of specifying the widths etc. in percentages, the box for all elements (and thus the resulting layout) scales with the size of the screen.
+        </p>
+        <header>
+            <h1>Page heading</h1>
+            <hr />
+        </header>
+        <div id="content">
+            <div id="sidebar">
+                Magna voluptate mollit magna occaecat velit veniam dolor et mollit cillum. Exercitation incididunt sit adipisicing voluptate esse amet pariatur laborum mollit laborum.
+                <img src="img/bob-minion.jpg" class="img-responsive" />
+                Est ut consectetur excepteur et fugiat anim sint ullamco incididunt proident. Aliqua ut nisi aliqua exercitation dolore in consectetur enim in deserunt sint sunt tempor culpa. Commodo sunt ea ipsum reprehenderit in quis. Nostrud veniam irure tempor in incididunt non est ut irure nisi culpa esse sint.
+            </div>
+            <div id="main-content">
+                <p>
+                    In adipisicing dolor officia voluptate do ullamco ut commodo ullamco voluptate sit incididunt. Et veniam adipisicing ex labore sit laboris deserunt veniam cupidatat tempor. Ullamco esse Lorem do reprehenderit deserunt ut veniam irure Lorem aliquip sint. Pariatur ipsum laborum qui excepteur excepteur occaecat laborum cillum sit ut. Sunt velit mollit consectetur sint exercitation.
+                </p>
+                <p>
+                    Cillum velit est anim proident sint irure cillum qui exercitation nulla sit. Veniam consectetur pariatur commodo et amet eu amet veniam velit deserunt enim tempor officia Lorem. Commodo adipisicing non occaecat aliquip cupidatat deserunt in. Qui enim Lorem consectetur dolor fugiat sit excepteur ullamco veniam veniam voluptate. Deserunt ut eu officia commodo ex occaecat.Ea veniam aliqua enim commodo ipsum et amet.
+                </p>
+                <p>
+                    Eu elit veniam laborum eiusmod aliqua in ipsum. Ex enim ad pariatur dolor pariatur reprehenderit ad eu incididunt eu ad sit reprehenderit dolore. Magna est et tempor pariatur veniam proident cillum consequat sit quis irure excepteur. Elit elit consectetur deserunt adipisicing ipsum et veniam in esse eiusmod. Qui duis sint fugiat cillum commodo enim enim minim. Exercitation Lorem quis nulla laborum veniam ut.
+                </p>
+                <p>
+                    Amet ad id incididunt pariatur mollit do do commodo sit occaecat nisi esse nulla. Amet reprehenderit irure dolore in laboris consectetur do excepteur ullamco eiusmod ipsum esse eiusmod amet. Labore enim eu incididunt tempor sint incididunt tempor sit quis esse aute.
+                </p>
+                <p>
+                    Duis id commodo consectetur amet non reprehenderit deserunt. Lorem Lorem ad laborum laborum. Dolore occaecat dolore aliqua laborum magna voluptate deserunt officia sunt elit in. Pariatur ipsum laboris ut aliqua cupidatat officia nostrud sint commodo. Enim deserunt voluptate mollit sint occaecat cillum et voluptate laborum culpa mollit elit amet. Reprehenderit pariatur exercitation quis sunt ad.
+                </p>
+            </div>
+        </div>
+        <footer>
+            <hr />
+            &copy; <script>(new Date).getFullYear()</script>, Some company
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Handling horizontal overflow in single line text of fixed width - ellipsizing</title>
+        <style>
+            ul > li > a {
+                display: inline-block;
+                max-width: 100px;
+
+                overflow: hidden;
+                /* Prevents wrapping of text at word boundaries - i.e. whitespaces are non-breaking */
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Handling horizontal overflow in single line text of fixed width - ellipsizing</h1>
+        <hr />
+
+        A single line of text of fixed width can be ellipsized when there is horizontal overflow. The overflow, white-space and text-overflow properties are used in conjunction to get ellipsized text.
+        <ul>
+            <li><a href="#" title="About AverylongCompanyName">About AverylongCompanyName</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Portfolio</a></li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>The hsl color model</title>
+        <style>
+            #para-1 {
+                color: hsl(200, 80%, 50%);
+            }
+
+            #para-2 {
+                color: hsla(100, 100%, 65%, 0.5);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The HSL Model</h1>
+        <hr />
+        
+        <p>
+            Colors can also be represented as a mixture of hue, saturation and lightness values. Hue is the base color and is represented as a degree along a "color wheel". Saturation, represented as a percentage value, is the extent of the hue, and lightness, again represented as a percentage, is the degree of whiteness/darkness (50% is the hue, saturation exactly as it is chosen). Unlike the rgb model, the hsl model does not provide a unique representaion for a color.
+        </p>
+
+        <h3>Values specified using hsl() (h -> degree between 0 - 360; s -> 0% - 100%; l -> 0% (black) - 100% (white))</h3>
+        <p id="para-1">
+            Anim ullamco tempor excepteur voluptate consectetur tempor proident consequat ea ipsum. Sint duis Lorem cupidatat aliqua cillum commodo. Lorem ullamco consequat labore do aute cillum cillum ad sunt dolore occaecat dolor. Sunt nisi esse reprehenderit ex incididunt reprehenderit.
+        </p>
+
+        <hr />
+
+        <h3>Values specified using hsla() - alpha value for opacity in addition (0 - 1)</h3>
+        <p id="para-2">
+            Anim ullamco tempor excepteur voluptate consectetur tempor proident consequat ea ipsum. Sint duis Lorem cupidatat aliqua cillum commodo. Lorem ullamco consequat labore do aute cillum cillum ad sunt dolore occaecat dolor. Sunt nisi esse reprehenderit ex incididunt reprehenderit.
+        </p>
+    </body>
+</html>

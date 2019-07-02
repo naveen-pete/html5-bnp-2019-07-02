@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Box Model - The Padding Area</title>
+        <style>
+            body {
+                text-align: justify;
+            }
+
+            div.demo-1 {
+                padding-top: 10px;
+                padding-right: 20px;
+                padding-bottom: 30px;
+                padding-left: 40px;
+
+                border: 1px solid black;
+            }
+
+            div.demo-2 {
+                padding: 10px 20px 30px 40px;
+                border: 1px solid black;
+            }
+
+            div.demo-3 {
+                padding: 1% 2% 3% 4%; /* approximately 1%, 2%, 3%, 4% of content width of parent - even vertical paddings are calculated as a percentage of parent content width (and not height) */
+
+                border: 1px solid black;
+            }
+            div.demo-3 {
+                padding: 1% 2% 3% 4%;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Box Model - The Padding Area</h1>
+        <hr />
+
+        <p>
+            The padding area is the space between borders and content. The padding on all directions can be adjusted individually. Paddings can be specified in absolute (eg. px) or relative (eg. %) units. Padding has longhand properties and a shorthand (padding).
+        </p>
+
+        <div class="demo-1">
+            Demo 1
+            <br />
+            Quis reprehenderit Lorem occaecat id aliqua commodo mollit sunt mollit. Quis laboris est labore cillum qui ea consequat exercitation ut ullamco enim. Ut ut cillum exercitation aliqua excepteur et magna commodo sunt ea. Do amet nisi ut qui non sit qui laboris exercitation adipisicing. Excepteur nisi tempor anim nulla nostrud labore. Exercitation non enim duis ex fugiat veniam. Qui officia occaecat sunt reprehenderit eiusmod qui eu adipisicing ex amet.
+        </div>
+
+        <div class="demo-2">
+            Demo 2
+            <br />
+            Quis reprehenderit Lorem occaecat id aliqua commodo mollit sunt mollit. Quis laboris est labore cillum qui ea consequat exercitation ut ullamco enim. Ut ut cillum exercitation aliqua excepteur et magna commodo sunt ea. Do amet nisi ut qui non sit qui laboris exercitation adipisicing. Excepteur nisi tempor anim nulla nostrud labore. Exercitation non enim duis ex fugiat veniam. Qui officia occaecat sunt reprehenderit eiusmod qui eu adipisicing ex amet.
+        </div>
+
+        <div class="demo-3">
+            Demo 3
+            <br />
+            Quis reprehenderit Lorem occaecat id aliqua commodo mollit sunt mollit. Quis laboris est labore cillum qui ea consequat exercitation ut ullamco enim. Ut ut cillum exercitation aliqua excepteur et magna commodo sunt ea. Do amet nisi ut qui non sit qui laboris exercitation adipisicing. Excepteur nisi tempor anim nulla nostrud labore. Exercitation non enim duis ex fugiat veniam. Qui officia occaecat sunt reprehenderit eiusmod qui eu adipisicing ex amet.
+        </div>
+    </body>
+</html>

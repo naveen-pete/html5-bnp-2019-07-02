@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Selector Specificity - Introduction</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            #para-last, #para-inline-styled {
+                color: red;
+            }
+
+            .para {
+                color: green;
+            }
+
+            p {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Selector Specificity - Introduction</h1>
+        <hr />
+
+        As long as the selector used is the same, the order decides the final styles. However the selector plays a role in conflict resolution of property value. A more "specific" selector like id gets more importance than class selector. Similarly a class is considered to be more specific than the element selector, and hence gets more importance.
+
+        <p>
+            Cupidatat irure fugiat exercitation adipisicing commodo laboris ad veniam ex. In consectetur magna Lorem cillum culpa consectetur culpa quis et reprehenderit pariatur tempor. Ad deserunt et occaecat nisi exercitation anim dolore commodo Lorem labore elit est quis. Consequat eiusmod anim magna labore cillum nulla. Laboris ullamco duis eiusmod adipisicing pariatur voluptate. Do eu commodo nulla ut ex elit adipisicing sint aliqua.
+        </p>
+        
+        <p class="para">
+            Cupidatat irure fugiat exercitation adipisicing commodo laboris ad veniam ex. In consectetur magna Lorem cillum culpa consectetur culpa quis et reprehenderit pariatur tempor. Ad deserunt et occaecat nisi exercitation anim dolore commodo Lorem labore elit est quis. Consequat eiusmod anim magna labore cillum nulla. Laboris ullamco duis eiusmod adipisicing pariatur voluptate. Do eu commodo nulla ut ex elit adipisicing sint aliqua.
+        </p>
+        
+        <p class="para" id="para-last">
+            Cupidatat irure fugiat exercitation adipisicing commodo laboris ad veniam ex. In consectetur magna Lorem cillum culpa consectetur culpa quis et reprehenderit pariatur tempor. Ad deserunt et occaecat nisi exercitation anim dolore commodo Lorem labore elit est quis. Consequat eiusmod anim magna labore cillum nulla. Laboris ullamco duis eiusmod adipisicing pariatur voluptate. Do eu commodo nulla ut ex elit adipisicing sint aliqua.
+        </p>
+
+        <p class="para" id="para-inline-styled" style="color: gold;">
+            Cupidatat irure fugiat exercitation adipisicing commodo laboris ad veniam ex. In consectetur magna Lorem cillum culpa consectetur culpa quis et reprehenderit pariatur tempor. Ad deserunt et occaecat nisi exercitation anim dolore commodo Lorem labore elit est quis. Consequat eiusmod anim magna labore cillum nulla. Laboris ullamco duis eiusmod adipisicing pariatur voluptate. Do eu commodo nulla ut ex elit adipisicing sint aliqua.
+        </p>
+    </body>
+</html>

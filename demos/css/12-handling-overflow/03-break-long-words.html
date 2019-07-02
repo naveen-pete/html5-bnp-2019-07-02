@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Handling horizontal overflow - break words in between</title>
+        <style>
+            p {
+                float: left;
+                width: 120px;
+                height: 100px;
+                padding: 5px;
+                border: 1px solid crimson;
+            }
+            
+            #para-1 {
+                word-wrap: break-word;
+                overflow-y: scroll;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Handling horizontal overflow - break words in between</h1>
+        <hr />
+
+        <div>
+            Lines are usually broken at word boundaries. A long word can thus overflow its container horizontally. This behavior of breaking lines at word boundaries only can be overcome using the word-wrap property set to the value break-word - this causes a word to potentially break in between and continue on the following line.
+        </div>
+
+        <p id="para-1">
+            Dolore irure minim magna amet ad et elit ut laborelaborelaborelaborelaborelabore. Labore fugiat magna qui aute esse mollit incididunt aliquip Lorem elit. Duis ad officia Lorem mollit irure nostrud incididunt. Aliqua amet qui irure aliquip.  Nulla aliqua minim cupidatat minim. Minim ipsum consectetur nulla anim veniam magna tempor aute ad esse voluptate est. Eiusmod do ex consectetur incididunt velit Lorem cillum ea culpa.
+        </p>
+    </body>
+</html>

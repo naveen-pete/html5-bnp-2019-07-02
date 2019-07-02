@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Cascade</title>
+        <style>
+            h3 {
+                font-weight: normal;
+            }
+
+            p {
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Cascading of styles</h1>
+        <hr />
+
+        When multiple selectors target an element and style them, the styles are applied one on top of another in source order (there are other factors at play that we shall see later). User-agent styles (browser's stylesheet) are applied first, then author styles. Thus, in case of conflict in a CSS property's value, the author's styles always trump the styles supplied by the browser.
+
+        <h3>A level 3 heading that is not bold (user-agent styles overriden by author styles)</h3>
+        <p>
+            Para 1 : These paragraphs have no margins
+        </p>
+        <p>
+            Para 2 : These paragraphs have no margins
+        </p>
+    </body>
+</html>

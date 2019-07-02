@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Forms - HTML5 input types</title>
+        <style>
+            form > div {
+                margin: 20px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="15-process-the-form.html" method="post">
+            <div>
+                <label for="email">Your primary email id</label>
+                <input type="email" id="primary-email" name="primary-email" />
+            </div>
+            
+            <div>
+                <label for="home-page">Your website address</label>
+                <input type="url" id="home-page" name="home-page" />
+            </div>
+            
+            <div>
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" />
+            </div>
+            
+            <div>
+                <label for="start-date">Start date</label>
+                <input type="date" id="start-date" name="start-date" min="2019-04-15" max="2020-06-30" />
+            </div>
+            
+            <input type="submit" value="Send message" />
+        </form>
+    </body>
+</html>
