@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Default values for CSS properties</title>
+        <style>
+            p {
+                font-size: medium; /* exact size depends on browser ~16px */
+                line-height: normal; /* exact height depends on browser ~1.2 (i.e. 1.2 * computed font-size for element) */
+            }
+
+            p {
+                font-size: 20px; /* override */
+            }
+
+            p {
+                font-size: initial; /* override again and reset to default */
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Default values for CSS properties</h1>
+        <hr />
+
+        CSS properties have default values. The default value can be set explicitly via the keyword "initial". It is important to be aware of the default values.
+
+        <p>
+            Adipisicing excepteur voluptate labore laboris sit cillum amet quis mollit ea adipisicing ut. Labore sit nulla laboris non culpa incididunt esse laboris ex culpa veniam. Amet irure ex velit et voluptate quis deserunt pariatur occaecat reprehenderit velit. Labore incididunt enim nostrud cillum enim consectetur consequat est est voluptate do id ut. Id adipisicing consequat tempor ad reprehenderit veniam qui elit consequat nostrud mollit aliquip sit Lorem. Et veniam tempor sint mollit. Eiusmod magna Lorem eu sit.
+        </p>
+    </body>
+</html>
